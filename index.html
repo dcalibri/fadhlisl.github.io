@@ -1,3 +1,10 @@
+<script>
+    function openNewTab(url) {
+        window.open(url, '_blank');
+    }
+</script>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Resume - Start Bootstrap Theme</title>
+    <title>Fadhli SL Portofolio</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -16,6 +23,27 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        /* Add this CSS code */
+        @media (max-width: 767px) {
+
+            /* Hide the image on screens smaller than 768 pixels wide (typically mobile devices) */
+            .img-profile2 {
+                display: block;
+                /* Show the image */
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            /* Show the image on screens 768 pixels wide or larger (typically not mobile devices) */
+            .img-profile2 {
+                display: none;
+                /* Hide the image */
+            }
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -48,16 +76,17 @@
         <section class="resume-section" id="about">
             <div class="resume-section-content">
                 <h1 class="mb-0">
+                    <div class="d-lg-none text-center">
+                        <!-- Add the following line to include the profile image -->
+                        <img class="img-fluid img-profile rounded-circle mx-auto mb-2 align-items-lg-center"
+                            src="assets/img/fadhlipp.png" alt="Fadhli Shafhan Lubis"
+                            style="width: 150px; height: 150px;" />
+                    </div>
 
-                    <!-- Add the following line to include the profile image -->
-                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/fadhlipp.png"
-                        alt="Fadhli Shafhan Lubis" style="width: 150px; height: 150px;" />
+                    <br>
 
-                    Fadhli Shafhan
-                    <span class="text-primary">Lubis</span>
-
-
-
+                    <span class="text-primary">Fadhli Shafhan</span>
+                    <span>Lubis</span>
                 </h1>
                 <div class="subheading mb-5">
                     3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
@@ -68,9 +97,11 @@
                     further the overall value proposition.</p>
                 <div class="social-icons">
                     <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="#!"><i class="fab fa-youtube"></i></a> <!-- Updated for YouTube -->
                     <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                    <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-icon" href="#!" onclick="openNewTab('https://www.instagram.com/fadhli.sl/')">
+                        <i class="fab fa-instagram"></i></a>
+                    <a class="social-icon" href="#!"><i class="fab fa-discord"></i></a>
                 </div>
             </div>
         </section>
@@ -125,14 +156,15 @@
             </div>
         </section>
         <hr class="m-0" />
+
         <!-- Education-->
         <section class="resume-section" id="education">
             <div class="resume-section-content">
                 <h2 class="mb-5">Education</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">University of Colorado Boulder</h3>
-                        <div class="subheading mb-3">Bachelor of Science</div>
+                        <h3 class="mb-0">Telkom University</h3>
+                        <div class="subheading mb-3">Teknologi Rekayasa Multimedia</div>
                         <div>Computer Science - Web Development Track</div>
                         <p>GPA: 3.23</p>
                     </div>
@@ -149,6 +181,7 @@
             </div>
         </section>
         <hr class="m-0" />
+
         <!-- Skills-->
         <section class="resume-section" id="skills">
             <div class="resume-section-content">
@@ -194,6 +227,7 @@
             </div>
         </section>
         <hr class="m-0" />
+
         <!-- Awards-->
         <section class="resume-section" id="awards">
             <div class="resume-section-content">
