@@ -1,271 +1,38 @@
-<script>
-    function openNewTab(url) {
-        window.open(url, '_blank');
-    }
-</script>
-
-
-<!DOCTYPE html>
-<html lang="id">
-
+﻿<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta charset="utf-8">
 
+    <title>Cerita_PlayerFlow_NightOFTheGallery</title>
 
-    <title>Fadhli SL Portofolio</title>
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:800,400i,700,700i&display=swap" 
-    rel="stylesheet"type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400i,800,800i" 
-    rel="stylesheet" type="text/css" />
-    
-    
+    <link rel="stylesheet" href="style.css">
 
-
-    <style>
-        /* Add this CSS code */
-        @media (max-width: 767px) {
-
-            /* Hide the image on screens smaller than 768 pixels wide (typically mobile devices) */
-            .img-profile2 {
-                display: block;
-                /* Show the image */
-            }
-        }
-
-        @media (min-width: 768px) {
-
-            /* Show the image on screens 768 pixels wide or larger (typically not mobile devices) */
-            .img-profile2 {
-                display: none;
-                /* Hide the image */
-            }
-        }
-    </style>
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Fadhli Shafhan Lubis2</span>
-            <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/fadhlipp.png"
-                    alt="asalaualaikum" />
-            </span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-            </ul>
+<body>
+
+    <div class="outerContainer">
+        <h3 class="written-in-ink"><a href="https://www.inklestudios.com/ink">WRITTEN IN INK</a></h3>
+
+        <div id="controls" class="buttons">
+          <a id="rewind" title="Restart story from beginning">restart</a>
+          <a id="save" title="Save progress">save</a>
+          <a id="reload" title="Reload from save point">load</a>
+          <a id="theme-switch" title="Switch theme">theme</a>
         </div>
-    </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-        <!-- About-->
-        <section class="resume-section" id="about">
-            <div class="resume-section-content">
-                <h1 class="mb-0">
-                    <div class="d-lg-none text-center">
-                        <!-- Add the following line to include the profile image -->
-                        <img class="img-fluid img-profile rounded-circle mx-auto mb-2 align-items-lg-center"
-                            src="assets/img/fadhlipp.png" alt="Fadhli Shafhan Lubis"
-                            style="width: 150px; height: 150px;" />
-                    </div>
 
-                    <br>
-
-                    <span class="text-primary">Fadhli Shafhan</span>
-                    <span>Lubis</span>
-                </h1>
-                <div class="subheading mb-5">
-                    Mahasiswa Telkom University · Bandung ·
-                    <a href="mailto:fadhlisl@gmail.com">fadhlisl@gmail.com</a>
-                </div>
-                <p class="lead mb-5">Saya adalah mahasiswa semester 5 di Telkom University dengan fokus pada pengembangan Game Engine. 
-                    Saya memiliki keahlian yang kuat dalam Unity 3D dan pengodingan C#. Selain itu, 
-                    keahlian saya meliputi desain 3D sebagai Enviorment Artist dan hardsurface modelling. 
-                    Saya terampil dalam menciptakan aset game, baik dalam format Highpoly maupun Lowpoly, 
-                    siap pakai untuk menciptakan pengalaman game yang menarik.</p>
-                <div class="social-icons">
-
-                    
-                    <a class="social-icon mb-3" href="#!"onclick="openNewTab('https://github.com/dcalibri')">
-                        <i class="fab fa-github"></i></a>
-
-                    <a class="social-icon mb-3" href="#!" onclick="openNewTab('https://www.instagram.com/fadhli.sl/')">
-                        <i class="fab fa-instagram"></i></a>
-
-                    <a class="social-icon mb-3" href="#!" onclick="openNewTab('https://discordapp.com/users/994013876788146227')"> 
-                        <i class="fab fa-discord"></i></a>
-                        
-                    <a class="social-icon mb-3" href="#!">
-                        <i class="fab fa-linkedin-in"></i></a>
-                    
-                    <a class="social-icon mb-3" href="#!">
-                        <i class="fab fa-youtube"></i></a> <!-- Updated for YouTube -->
-                </div>
+        <div id="story" class="container">
+            <div class="header">
+                <h1>Cerita_PlayerFlow_NightOFTheGallery</h1>
+                <h2 class="byline"></h2>
             </div>
-        </section>
-        <hr class="m-0" />
-
-        <!-- Experience-->
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Experience</h2>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">AR Furniture Shopping</h3>
-                        <div class="subheading mb-3">3D Modeller, Designer, Programmer</div>
-                        <p><a href="https://play.google.com/store/apps/details?id=com.bojongsantos.BojongSantosFurniture&hl=id">Google Play Store Link</a></p>
-                        <p><a href="https://youtu.be/DyZYevCc2NY">Video Gameplay Link</a></p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2023 - 2024</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Interactive Instrument Music Composer</h3>
-                        <div class="subheading mb-3">3D Designer, Programmer</div>
-                        <p><a href="https://youtube.com/shorts/7QmBppwefHk?si=miPfv7vocZ0uAIMb">Video Gameplay Link</a></p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2023 - 2024</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Digective Puzzle</h3>
-                        <div class="subheading mb-3">3D Modeller, Designer, Programmer</div>
-                        <p><a href="https://fadhlisl.itch.io/digective-puzzle">Game Link</a></p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2023</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Metaverse Wisuda Telkom University</h3>
-                        <div class="subheading mb-3">3D Environment Artist</div>
-                        <p><a href="https://telkomuniversity.ac.id/telkom-university-gelar-wisuda-metaverse-pertama-di-indonesia/">Article Link</a></p>
-                        <p><a href="https://www.youtube.com/watch?v=FsYnhXEpu0Y&ab_channel=TelkomUniversity">Video Link</a></p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Metaverse Jagad Creative Office</h3>
-                        <div class="subheading mb-3">3D Environment Artist</div>
-                        <!-- You can leave this section blank if no links are provided -->
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
-                </div>
-
-            </div>
-        </section>
-        <hr class="m-0" />
-
-
-
-        <!-- Education-->
-        <section class="resume-section" id="education">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Education</h2>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Telkom University</h3>
-                        <div class="subheading mb-2">D4 Teknologi Rekayasa Multimedia</div>
-                        <p>IPK: 3.7</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2021 - Sekarang</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">SMAN 6 Tambun Selatan</h3>
-                        <div class="subheading mb-2">Science</div>
-                        
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2019 - 2021</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">MAN Al-Azhar Asy-Syarif</h3>
-                        <div class="subheading mb-2">Science</div>
-                        
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2018 - 2019</span></div>
-                </div>
-
-            </div>
-
-        </section>
-        <hr class="m-0" />
-
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Skills</h2>
-
-                <h3 class="mb-2">Programming Languages & Tools</h3>
-                <p>Android Studio, Unity Engine, Arduino IDE, Anaconda, C Sharp, 
-                    C ++, Kotlin, Java, HTML, CSS, Python.</p>
-
-                <h3 class="mb-2">Graphics & Design Tools</h3>
-                <p>Blender, Blockbench, Figma, Photoshop, Canva, Github, Notion.</p>
-            </div>
-        </section>
-
-
-        <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Interests</h2>
-                <p>do what good .</p>
-                <p class="mb-0">Bismillahi tawakaltu .</p>
-            </div>
-        </section>
-        <hr class="m-0" />
-
-        <!-- Awards-->
-        <section class="resume-section" id="awards">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Awards & Certifications</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        IT Support Profesional Google · November 16, 2022
-                    </li>
-                    
-                </ul>
-            </div>
-        </section>
+        </div>
     </div>
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="ink.js"></script>
+    <script src="Inky Coba.js"></script>
+    <script src="main.js"></script>
 </body>
-
 </html>
